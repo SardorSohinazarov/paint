@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>Paint | Sardor</title>
+</head>
+<body>
+    <div class="container">
+        <section class="drawing-board">
+            <canvas></canvas>
+        </section>
+        <section class="tools-board">
+            <div class="row">
+                <label class="title">SHAKLLAR</label>
+                <ul class="options">
+                    <li class="option tool" id="rectangle">
+                        <img src="" alt="rectangle">
+                        <span>To'rtburchak</span>
+                    </li>
+                    <li class="option tool" id="circle">
+                        <img src="" alt="circle">
+                        <span>Aylana</span>
+                    </li>
+                    <li class="option tool" id="triangle">
+                        <img src="" alt="triangle">
+                        <span>Uchburchak</span>
+                    </li>
+                    <li class="option">
+                        <input type="checkbox" id="fill-color">
+                        <span for="fill-color">Uchburchak</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="row">
+                <label class="title">VARIANTLAR</label>
+                <ul class="options">
+                    <li class="option tool active" id="brush">
+                        <img src="" alt="brush">
+                        <span>Brush</span>
+                    </li>
+                    <li class="option tool" id="eraser">
+                        <img src="" alt="eraser">
+                        <span>O'chirg'ich</span>
+                    </li>
+                    <li class="option">
+                        <input type="range" id="size-slider" minlength="1" maxlength="30" value="5">
+                        <span for="fill-color">Uchburchak</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="row colors">
+                <label class="title">RANGLAR</label>
+                <ul class="options">
+                    <li class="option"></li>
+                    <li class="option selected"></li>
+                    <li class="option"></li>
+                    <li class="option"></li>
+                    <li class="option">
+                        <input type="color" id="color-picker" value="4a98f7">
+                    </li>
+                </ul>
+            </div>
+            <div class="row buttons">
+                <button class="clear-canvas">O'chirish</button>
+                <button class="save-img">Saqlash</button>
+            </div>
+        </section>
+    </div>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
